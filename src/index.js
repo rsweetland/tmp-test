@@ -6,6 +6,11 @@ module.exports = {
 	random: random
 };
 
+/**
+ * Get random string from starwars names
+ * @param  {[type]} number [description]
+ * @return {[type]}        [description]
+ */
 function random(number) {
 	if (!number) return uniqueRandomArray(starWarsNames)();
 	var items = [];
