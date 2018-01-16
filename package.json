@@ -1,14 +1,17 @@
 {
   "name": "tmp-test-esweetland",
-  "version": "1.1.0-beta.1",
+  "version": "0.0.0-semantically-released",
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rsweetland/tmp-test.git"
+    "url": "https://github.com/rsweetland/tmp-test.git"
   },
   "author":
     "Reilly Sweetland <esweetland@gmail.com> (https://reillysweetland.com/)",
@@ -19,5 +22,16 @@
   "homepage": "https://github.com/rsweetland/tmp-test#readme",
   "dependencies": {
     "unique-random-array": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0",
+    "mocha": "4.1.0",
+    "semantic-release": "^12.2.2",
+    "travis-deploy-once": "^4.3.1"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
