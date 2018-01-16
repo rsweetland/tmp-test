@@ -1,6 +1,6 @@
 {
   "name": "tmp-test-esweetland",
-  "version": "0.0.0-semantically-released.1",
+  "version": "0.0.0-semantically-released.2",
   "description": "",
   "main": "src/index.js",
   "scripts": {
